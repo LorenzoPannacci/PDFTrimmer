@@ -1,3 +1,7 @@
+# Forked
+
+This fork updated the the script to work for PyPDF2 3.0.0
+
 # PDF Trimmer
 Ever encountered PDFs that have redundant content on pages, most likely because they were generated from each step of PPTs with animation?
 
