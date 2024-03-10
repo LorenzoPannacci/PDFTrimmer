@@ -62,6 +62,14 @@ for i in range(len(files)):
         # resize page to fit *inside* A5
         h = float(page.mediabox.height)
         w = float(page.mediabox.width)
+
+        if w > h:
+            A5_w = PaperSize.A5.height
+            A5_h = PaperSize.A5.width
+        else:
+            A5_w = PaperSize.A3.width
+            A5_h = PaperSize.A3.height
+
         scale_factor = min(A5_h/h, A5_w/w)
 
         # get borders to center old page into new page
